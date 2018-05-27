@@ -1,11 +1,11 @@
-#Toy Robot Simulator
+# Toy Robot Simulator
 
-☻ The application is a simulation of a toy robot moving on a square tabletop, of
+• The application is a simulation of a toy robot moving on a square tabletop, of
 dimensions 5 units x 5 units.
 
-☻ The robot is free to roam around the surface of the table, but must be prevented from falling to destruction. 
+• The robot is free to roam around the surface of the table, but must be prevented from falling to destruction. 
 
-There are four buttons to control the robot:
+• There are four buttons to control the robot:
 
 1. MOVE will move the toy robot one unit forward in the direction it is currently facing.
 
