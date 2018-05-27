@@ -3,102 +3,57 @@
 <head>
     <meta charset="utf-8">
     <title>Toy Robot</title>
-    <style>
-    body {
-        margin: 0;
-        padding: 0;
-    }
-    .container {
-        width: 500px;
-        height: 500px;
-        transform: translate(50%,35%);
-        border: 2px solid black;
-        font-size: 0;
-    }
-    .row {
-        display: block;
-    }
-    .row:nth-child(even) .cell:nth-child(even) {
-        background: #e0e0e0;
-    }
-    .row:nth-child(odd) .cell:nth-child(odd) {
-        background: #e0e0e0;
-    }
-    .cell {
-        display: inline-block;
-        width: 100px;
-        height: 100px;
-        z-index: -1;
-    }
-    #robot {
-      width: 50px;
-      height: 50px;
-      border-radius: 50%;
-      font-size: 15px;
-      color: white;
-      background-color: blue;
-      line-height: 50px;
-      text-align: center;
-      z-index: 1;
-      position: absolute;
-    }
-    .output {
-        transform: translate(50%,350%);
-        width: 500px;
-        height: 50px;
-        background-color: #e0e0e0;
-        border: 2px solid black;
-    }
-    .hidden {
-        display: none;
-    }
-    </style>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
-    <button id="move">MOVE</button>
-    <button id="left">LEFT</button>
-    <button id="right">RIGHT</button>
-    <button id="report">REPORT</button>
-    <div class="container">
-        <div id="robot" >North</div>
-        <div class="row">
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
+    <div class="wrapper">
+        <div class="button-container">
+            <button id="move">MOVE</button>
+            <button id="left">LEFT</button>
+            <button id="right">RIGHT</button>
+            <button id="report">REPORT</button>
         </div>
-        <div class="row">
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
+        <div class="table-container">
+            <div id="robot" >North</div>
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
+            <div class="row">
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+                <div class="cell"></div>
+            </div>
         </div>
-        <div class="row">
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-        </div>
-        <div class="row">
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-        </div>
-        <div class="row">
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-            <div class="cell"></div>
-        </div>
+        <div id="output" class="output hidden"></div>
     </div>
-    <div id="output" class="output hidden"></div>
-    <script src="robot.js"></script>
 
+    <script src="robot.js"></script>
 </body>
 </html>
